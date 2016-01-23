@@ -2,4 +2,10 @@
 
 //Add a reverse method to the String 'class' so that every instance of String can call reverse and reverse itself.
   
-  //code here
+String.prototype.reverse = function () {
+    var reversed = '';
+    for (var i = this.length-1; i > -1; i--) {
+        reversed += this[i];
+    }
+    return reversed;
+}
