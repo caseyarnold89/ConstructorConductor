@@ -35,8 +35,6 @@ var UserFind = function (arr, name, cb) {
     cb(userName);
 }
 
-var displayUserInfo = function (users, 
-}
 
 console.log('Lenny\'s information is ');
 //Now console.log all of Lennys information
