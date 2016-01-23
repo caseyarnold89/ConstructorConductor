@@ -5,7 +5,7 @@
 
 //Create a QuizUser constructor that accepts name, email, password, and totalScore parameters and set them appropriatly
 
-var QuizUserConstructor = function (name, email, password, totalScore) {
+var QuizUser = function (name, email, password, totalScore) {
     this.name = name;
     this.email = email;
     this.password = password;
@@ -15,7 +15,7 @@ var QuizUserConstructor = function (name, email, password, totalScore) {
 
 //Create a Question constructor that accepts title, answersArray, rightAnswer, and difficulty parameters
 
-var QuestionConstructor = function (title, answersArray, rightAnswer, difficulty) {
+var Question = function (title, answersArray, rightAnswer, difficulty) {
     this.title = title;
     this.answersArray = answersArray;
     this.rightAnswer = rightAnswer;
@@ -30,9 +30,9 @@ var quizUsers = [];
 
 //Let's say three people signed up for our service, create 3 instances of User and add each to the users Array
 
-var user1 = new QuizUserConstructor('Casey', 'casey@gmail.com', 'test', 98);
-var user2 = new QuizUserConstructor('John', 'john@john', 'test2', 75);
-var user3 = new QuizUserConstructor('Dog', 'dogsdonthaveemails', 'woof', 2);
+var user1 = new QuizUser('Casey', 'casey@gmail.com', 'test', 98);
+var user2 = new QuizUser('John', 'john@john', 'test2', 75);
+var user3 = new QuizUser('Dog', 'dogsdonthaveemails', 'woof', 2);
 
 quizUsers.push(user1, user2, user3);
 
@@ -47,9 +47,9 @@ var questions = [];
 //title: "T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value"
 //Fill in the rest of the required data as you see appropriate.
 
-var q1 = new QuestionConstructor('T/F: Inheritance is achieved in JavaScript through Prototypes',['T', 'F'], 'T', 'Easy');
-var q2 = new QuestionConstructor('T/F: JavaScript is just a scripting version of Java',['T', 'F'], 'T', 'Easy');
-var q3 = new QuestionConstructor("T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value",['T', 'F'], 'T', 'Easy');
+var q1 = new Question('T/F: Inheritance is achieved in JavaScript through Prototypes',['T', 'F'], 'T', 'Easy');
+var q2 = new Question('T/F: JavaScript is just a scripting version of Java',['T', 'F'], 'T', 'Easy');
+var q3 = new Question("T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value",['T', 'F'], 'T', 'Easy');
 
 
 //Now push all of your instances of Question into the questions Array
